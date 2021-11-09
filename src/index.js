@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
-  return <h1>This is my React app!</h1>;
-};
+import GlobalStyle from './global.styles';
+import HomePage from './pages/home/home.page.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const App = () => (
+  <>
+    <GlobalStyle />
+    <HomePage />
+  </>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
