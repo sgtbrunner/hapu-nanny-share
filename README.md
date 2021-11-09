@@ -1,1 +1,1 @@
-# jungle-devs-react-challenge
+# Jungle Devs React Challenge
