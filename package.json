@@ -1,5 +1,5 @@
 {
-  "name": "jungle-devs-react-challenge",
+  "name": "hapu-nanny-share",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,8 @@
     "html",
     "javascript",
     "react",
-    "jungle-devs"
+    "jungle-devs",
+    "hapu-nanny-share"
   ],
   "author": "Guilherme Brunner",
   "license": "ISC",
