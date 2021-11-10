@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root {
+        // COLORS
         --primary-color: #00A870;
         --secondary-color: #5E20A4;
         --white-color: white;
@@ -9,10 +10,25 @@ const GlobalStyle = createGlobalStyle`
         --grey-color: #3D3D3D;
         --disabled-color: gray;
         --error-color: red;
+
+        // FONT
         --default-font-family: 'Inter';
-        --icon-length: 66px;
-        --md-font-size: 14px;
+        --sm-font-size: 14px;
+        --md-font-size: 16px;
+        --lg-font-size: 18px;
+        --xl-font-size: 28px;
+        --xxl-font-size: 40px;
+        --light-font-weight: 400;
         --normal-font-weight: 500;
+
+        //LINE HEIGHT
+        --sm-line-height: 20px;
+        --md-line-height: 24px;
+        --lg-line-height: 28px;
+        --xl-line-height: 32px;
+        --xxl-line-height: 48px;
+        
+        --icon-length: 66px;
     }
 
     body {

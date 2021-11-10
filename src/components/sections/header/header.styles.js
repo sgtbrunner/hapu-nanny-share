@@ -39,15 +39,15 @@ export const HeroTitle = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: 28px;
+    font-size: var(--xl-font-size);
     margin: 0 0 24px 0;
-    line-height: 32px;
+    line-height: var(--xl-line-height);
   }
 
   h3 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-weight: var(--light-font-weight);
+    font-size: var(--md-font-size);
+    line-height: var(--lg-line-height);
     margin: 0;
   }
 
@@ -56,17 +56,17 @@ export const HeroTitle = styled.div`
     padding-right: 40px;
 
     h1 {
-      font-size: 40px;
-      font-weight: 500;
+      font-size: var(--xxl-font-size);
+      font-weight: var(--normal-font-weight);
       margin-bottom: 16px;
       max-width: 520px;
-      line-height: 48px;
+      line-height: var(--xxl-line-height);
     }
 
     h3 {
       max-width: 584px;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: var(--lg-font-size);
+      line-height: var(--md-line-height);
     }
   }
 `;

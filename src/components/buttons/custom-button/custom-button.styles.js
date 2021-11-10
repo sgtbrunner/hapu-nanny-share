@@ -7,7 +7,7 @@ const getButtonStyles = ({ color, textColor }) => css`
 
 export const CustomButtonContainer = styled.button`
   font-family: var(--default-font-family);
-  font-size: var(--md-font-size);
+  font-size: var(--sm-font-size);
   padding: 12px 22px;
   border-radius: 4px;
   border-style: hidden;

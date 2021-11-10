@@ -41,8 +41,8 @@ export const LeadLink = styled.a`
   font-family: var(--default-font-family);
   font-weight: var(--normal-font-weight);
   padding: 0 64px 12px 64px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
 
   @media screen and (min-width: 768px) {
     padding: 0 2px 0 0;
@@ -53,11 +53,11 @@ export const LeadText = styled.h5`
   color: var(--black-color);
   font-family: var(--default-font-family);
   font-weight: var(--normal-font-weight);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: var(--sm-font-size);
+  line-height: var(--sm-line-height);
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: var(--md-font-size);
+    line-height: var(--md-line-height);
   }
 `;

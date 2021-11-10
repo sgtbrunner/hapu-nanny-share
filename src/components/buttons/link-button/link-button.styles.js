@@ -6,8 +6,8 @@ const getButtonStyles = ({ textColor }) => css`
 
 export const LinkButtonContainer = styled.button`
   font-family: var(--default-font-family);
-  font-size: var(--md-font-size);
-  font-weight: 500;
+  font-size: var(--sm-font-size);
+  font-weight: var(--normal-font-weight);
   border: none;
   padding: 0;
   background: none;
