@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import MobileBgHeader from '../../assets/images/header-bg-mobile.svg';
-import DesktopBgHeager from '../../assets/images/header-bg.svg';
+import MobileBgHeader from '../../../assets/images/header-bg-mobile.svg';
+import DesktopBgHeager from '../../../assets/images/header-bg.svg';
 
 export const HeaderContainer = styled.header`
   background-image: url(${MobileBgHeader}),

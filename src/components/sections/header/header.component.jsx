@@ -6,7 +6,7 @@ import {
   experimentDebugger,
 } from '@marvelapp/react-ab-test';
 
-import NavBar from '../nav-bar/nav-bar.component';
+import NavBar from '../../nav-bar/nav-bar.component';
 import {
   HeaderContainer,
   HeroContainer,
@@ -14,10 +14,10 @@ import {
   HeroPlay,
   HeroImageContainer,
 } from './header.styles';
-import { HiddenOnMobile } from '../../global.styles';
-import LinkButton from '../buttons/link-button/link-button.component';
-import PlayButton from '../../assets/icons/play-button.svg';
-import HeroImage from '../../assets/images/hero-image.svg';
+import { HiddenOnMobile } from '../../../global.styles';
+import LinkButton from '../../buttons/link-button/link-button.component';
+import PlayButton from '../../../assets/icons/play-button.svg';
+import HeroImage from '../../../assets/images/hero-image.svg';
 
 const testName = 'hero section A/B test';
 const testABVariants = [
