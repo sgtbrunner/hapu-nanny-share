@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { CustomButtonContainer } from './custom-button.styles';
+import { CustomButtonComponent } from './custom-button.styles';
 
-const CustomButton = ({ children, color, disabled, textColor }) => (
-  <CustomButtonContainer
+const CustomButton = ({ children, color, disabled, textColor, type }) => (
+  <CustomButtonComponent
     color={color}
     disabled={disabled}
     textColor={textColor}
+    type={type}
   >
     {children}
-  </CustomButtonContainer>
+  </CustomButtonComponent>
 );
 
 CustomButton.propTypes = {
@@ -18,12 +19,14 @@ CustomButton.propTypes = {
   children: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   textColor: PropTypes.string,
+  type: PropTypes.string,
 };
 
 CustomButton.defaultProps = {
   color: 'primary',
   disabled: false,
   textColor: 'white',
+  type: 'button',
 };
 
 export default CustomButton;

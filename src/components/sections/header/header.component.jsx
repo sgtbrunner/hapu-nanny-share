@@ -14,7 +14,7 @@ import {
   HeroPlay,
   HeroImageContainer,
 } from './header.styles';
-import { HiddenOnMobile } from '../../../global.styles';
+import { HiddenOnSmallScreens } from '../../../global.styles';
 import LinkButton from '../../buttons/link-button/link-button.component';
 import PlayButton from '../../../assets/icons/play-button.svg';
 import HeroImage from '../../../assets/images/hero-image.svg';
@@ -66,11 +66,11 @@ const Header = () => (
           </HeroPlay>
         </LinkButton>
       </div>
-      <HiddenOnMobile>
+      <HiddenOnSmallScreens>
         <HeroImageContainer>
           <img src={HeroImage} alt="hero-image" />
         </HeroImageContainer>
-      </HiddenOnMobile>
+      </HiddenOnSmallScreens>
     </HeroContainer>
   </HeaderContainer>
 );

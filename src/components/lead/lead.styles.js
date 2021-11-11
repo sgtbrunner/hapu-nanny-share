@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const LeadContainer = styled.div`
-  color: var(--white-color);
+export const LeadContainer = styled.section`
+  background-color: var(--white-color);
   border: 1px solid #dfdfdf;
+  border-right: none;
+  border-left: none;
   width: 100%;
 `;
 
@@ -35,10 +37,6 @@ export const LeadIcon = styled.img`
 `;
 
 export const LeadLink = styled.a`
-  color: var(--secondary-color);
-  text-decoration: underline;
-  cursor: pointer;
-  font-family: var(--default-font-family);
   font-weight: var(--normal-font-weight);
   padding: 0 64px 12px 64px;
   font-size: var(--md-font-size);

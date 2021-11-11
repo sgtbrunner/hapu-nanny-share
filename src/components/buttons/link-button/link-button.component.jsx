@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { LinkButtonContainer } from './link-button.styles';
+import { LinkButtonComponent } from './link-button.styles';
 
 const LinkButton = ({ children, textColor }) => (
-  <LinkButtonContainer textColor={textColor}>{children}</LinkButtonContainer>
+  <LinkButtonComponent textColor={textColor} type="link">
+    {children}
+  </LinkButtonComponent>
 );
 
 LinkButton.propTypes = {

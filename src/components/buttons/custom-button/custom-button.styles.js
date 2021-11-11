@@ -5,7 +5,7 @@ const getButtonStyles = ({ color, textColor }) => css`
   color: var(--${textColor}-color, var(--white-color));
 `;
 
-export const CustomButtonContainer = styled.button`
+export const CustomButtonComponent = styled.button`
   font-family: var(--default-font-family);
   font-size: var(--sm-font-size);
   padding: 12px 22px;

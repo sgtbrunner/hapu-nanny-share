@@ -16,8 +16,9 @@ const GlobalStyle = createGlobalStyle`
         --sm-font-size: 14px;
         --md-font-size: 16px;
         --lg-font-size: 18px;
-        --xl-font-size: 28px;
-        --xxl-font-size: 40px;
+        --xl-font-size: 22px;
+        --xxl-font-size: 28px;
+        --xxxl-font-size: 40px;
         --light-font-weight: 400;
         --normal-font-weight: 500;
 
@@ -36,8 +37,18 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Inter';
     }
 
-    button {
+    a, button {
         cursor: pointer;
+    }
+
+    a {
+        color: var(--secondary-color);
+        text-decoration: underline;
+        font-family: var(--default-font-family);
+    }
+
+    main {
+        background-color: #F2F2F2;
     }
 
     code, html {
@@ -49,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const HiddenOnMobile = styled.div`
+export const HiddenOnSmallScreens = styled.div`
   display: none;
 
   @media screen and (min-width: 768px) {

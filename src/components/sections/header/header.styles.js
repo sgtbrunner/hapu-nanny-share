@@ -39,7 +39,7 @@ export const HeroTitle = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: var(--xl-font-size);
+    font-size: var(--xxl-font-size);
     margin: 0 0 24px 0;
     line-height: var(--xl-line-height);
   }
@@ -56,7 +56,7 @@ export const HeroTitle = styled.div`
     padding-right: 40px;
 
     h1 {
-      font-size: var(--xxl-font-size);
+      font-size: var(--xxxl-font-size);
       font-weight: var(--normal-font-weight);
       margin-bottom: 16px;
       max-width: 520px;
