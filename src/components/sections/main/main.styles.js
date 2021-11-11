@@ -1,17 +1,27 @@
 import styled, { css } from 'styled-components';
 
-const isReverseDirection = (direction) => direction === 'reverse';
+const isColumnDirection = (direction) => direction === 'column';
+const isReverseOrientation = (orientation) => orientation === 'reverse';
 
-const getImageSectionStyles = ({ direction = 'forward' }) => css`
-  flex-direction: ${isReverseDirection(direction) ? 'row-reverse' : 'row'};
-  gap: ${isReverseDirection(direction) ? '20px' : '130px'};
+const getImageSectionLargeScreenStyles = ({
+  direction = 'row',
+  orientation = 'forward',
+  paddingY = 96,
+}) => css`
+  flex-direction: ${isColumnDirection(direction) ? 'column' : 'row'}${isReverseOrientation(orientation) ? '-reverse' : ''};
+  padding: ${paddingY}px 10% ${paddingY}px 10%;
+  gap: ${isColumnDirection(direction)
+    ? 0
+    : isReverseOrientation(direction)
+    ? '20px'
+    : '130px'};
 `;
 
 const Section = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--grey-color);
+  color: var(--dark-grey-color);
 `;
 
 export const ImageSection = styled(Section)`
@@ -42,14 +52,17 @@ export const ImageSection = styled(Section)`
     padding: 0 5% 16px 5%;
   }
 
+  a {
+    padding: 0 5%;
+  }
+
   @media screen and (min-width: 1100px) {
-    ${getImageSectionStyles}
-    padding: 80px 10% 80px 10%;
+    ${getImageSectionLargeScreenStyles}
 
     img {
       margin: 0;
       height: 392px;
-      width: 584px;
+      width: 984px;
     }
 
     div {
@@ -65,6 +78,10 @@ export const ImageSection = styled(Section)`
     p {
       margin: 0;
       padding: 0 60px 40px 0;
+    }
+
+    a {
+      padding: 0 0 64px 0;
     }
   }
 `;

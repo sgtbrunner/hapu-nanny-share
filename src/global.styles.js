@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
         --secondary-color: #5E20A4;
         --white-color: white;
         --black-color: #000000;
-        --grey-color: #3D3D3D;
+        --light-grey-color: #F2F2F2;
+        --dark-grey-color: #3D3D3D;
         --disabled-color: gray;
         --error-color: red;
 
@@ -44,11 +45,10 @@ const GlobalStyle = createGlobalStyle`
     a {
         color: var(--secondary-color);
         text-decoration: underline;
-        font-family: var(--default-font-family);
     }
 
     main {
-        background-color: #F2F2F2;
+        background-color: var(--light-grey-color);
     }
 
     code, html {

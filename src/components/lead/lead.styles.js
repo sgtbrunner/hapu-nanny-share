@@ -49,7 +49,6 @@ export const LeadLink = styled.a`
 
 export const LeadText = styled.h5`
   color: var(--black-color);
-  font-family: var(--default-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--sm-font-size);
   line-height: var(--sm-line-height);

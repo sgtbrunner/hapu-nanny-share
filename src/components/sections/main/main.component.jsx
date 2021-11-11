@@ -6,12 +6,19 @@ import CustomButton from '../../buttons/custom-button/custom-button.component';
 import { ImageSection, FormSection } from './main.styles';
 import ImageSection1 from '../../../assets/images/image-section-1.svg';
 import ImageSection3 from '../../../assets/images/image-section-3.svg';
+import ImageSection4 from '../../../assets/images/image-section-4.svg';
+import ImageSection5 from '../../../assets/images/image-section-5.svg';
+import { HiddenOnSmallScreens } from '../../../global.styles';
 
 const mainSections = [
   {
     component: (
-      <ImageSection direction="reverse">
-        <img src={ImageSection1} alt="image-section-1" />
+      <ImageSection orientation="reverse" paddingY={120}>
+        <img
+          src={ImageSection1}
+          alt="image-section-1"
+          style={{ maxWidth: 584 }}
+        />
         <div>
           <h3>
             <span>Share your home,</span>
@@ -22,10 +29,11 @@ const mainSections = [
             You have a fantastic home, a fantastic nanny and wouldn’t cutting
             your costs in half be, well, fantastic?! If only it was easy to
             connect with other parents to share your costs? Well now it is, with
-            Hapu. <a>Hapu means tribe</a> and it’s our foundational 3 tribal
-            principles that empowers you to create and manage your own tribe. A
-            tribe that together has the power to create new affordable solutions
-            in childcare that work for you and your community.
+            Hapu. <a style={{ padding: 0 }}>Hapu means tribe</a> and it’s our
+            foundational 3 tribal principles that empowers you to create and
+            manage your own tribe. A tribe that together has the power to create
+            new affordable solutions in childcare that work for you and your
+            community.
           </p>
           <a>Ready to get started?</a>
         </div>
@@ -67,6 +75,42 @@ const mainSections = [
           </p>
           <a>Read how Bridget’s share (without Hapu) ended over $15</a>
         </div>
+      </ImageSection>
+    ),
+  },
+  {
+    component: (
+      <ImageSection direction="column">
+        <h3>A framework built for the long term</h3>
+        <p>
+          Childcare is for the long term. And you need a framework you can count
+          on that gives your share long term viability and success. That’s why
+          we’ve defined Hapu around our three tribal principles; clearly defined
+          process, transparency over money and equality of participation.
+        </p>
+        <a>Read how Hapu’s tribal background defines our app</a>
+        <HiddenOnSmallScreens>
+          <img src={ImageSection4} alt="ImageSection4" />
+        </HiddenOnSmallScreens>
+      </ImageSection>
+    ),
+  },
+  {
+    component: (
+      <ImageSection direction="column">
+        <img
+          src={ImageSection5}
+          alt="ImageSection5"
+          style={{ maxWidth: 216, maxHeight: 96, marginBottom: 30 }}
+        />
+        <h3>Coming soon: Nanny Share Daily Diary!</h3>
+        <p>
+          With the Hapu daily diary your nanny will be able to update you and
+          your sharers with photos and commentary of the day. You and sharers
+          will receive notifications and you’ll be able to login to view the
+          daily adventures fo your little ones. We can’t wait!
+        </p>
+        <HiddenOnSmallScreens></HiddenOnSmallScreens>
       </ImageSection>
     ),
   },
