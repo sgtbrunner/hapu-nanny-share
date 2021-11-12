@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { PRIMARY, SECONDARY, WHITE, BUTTON } from '../../utils/constants.utils';
 import { CustomButtonComponent } from './custom-button.styles';
 
 const CustomButton = ({ children, color, disabled, textColor, type }) => (
@@ -15,18 +16,22 @@ const CustomButton = ({ children, color, disabled, textColor, type }) => (
 );
 
 CustomButton.propTypes = {
-  color: PropTypes.oneOf(['primary', 'secondary']),
-  children: PropTypes.string.isRequired,
+  color: PropTypes.oneOf([PRIMARY, SECONDARY]),
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired,
   disabled: PropTypes.bool,
   textColor: PropTypes.string,
   type: PropTypes.string,
 };
 
 CustomButton.defaultProps = {
-  color: 'primary',
+  color: PRIMARY,
   disabled: false,
-  textColor: 'white',
-  type: 'button',
+  textColor: WHITE,
+  type: BUTTON,
 };
 
 export default CustomButton;

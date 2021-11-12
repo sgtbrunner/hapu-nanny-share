@@ -6,6 +6,7 @@ import {
   experimentDebugger,
 } from '@marvelapp/react-ab-test';
 
+import { WHITE } from '../../../utils/constants.utils';
 import NavBar from '../../nav-bar/nav-bar.component';
 import {
   HeaderContainer,
@@ -15,7 +16,7 @@ import {
   HeroImageContainer,
 } from './header.styles';
 import { HiddenOnSmallScreens } from '../../../global.styles';
-import LinkButton from '../../buttons/link-button/link-button.component';
+import Link from '../../link/link.component';
 import PlayButton from '../../../assets/icons/play-button.svg';
 import HeroImage from '../../../assets/images/hero-image.svg';
 
@@ -57,14 +58,12 @@ const Header = () => (
             </Variant>
           ))}
         </Experiment>
-        <LinkButton>
+        <Link textColor={WHITE}>
           <HeroPlay>
             <img src={PlayButton} alt="play-button" />
-            <a href="#link" id="link">
-              See hapu in action (27 seconds)
-            </a>
+            <p>See hapu in action (27 seconds)</p>
           </HeroPlay>
-        </LinkButton>
+        </Link>
       </div>
       <HiddenOnSmallScreens>
         <HeroImageContainer>

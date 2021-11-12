@@ -54,6 +54,10 @@ const GlobalStyle = createGlobalStyle`
     code, html {
         font-family: 'Inter', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
     }
+
+    ul {
+        list-style: none;
+    }
     
     * {
         box-sizing: border-box;

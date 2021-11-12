@@ -2,7 +2,7 @@ import React from 'react';
 
 import Lead from '../../lead/lead.component';
 import Divider from '../../divider/divider.component';
-import CustomButton from '../../buttons/custom-button/custom-button.component';
+import CustomButton from '../../custom-button/custom-button.component';
 import { ImageSection, FormSection } from './main.styles';
 import ImageSection1 from '../../../assets/images/image-section-1.svg';
 import ImageSection3 from '../../../assets/images/image-section-3.svg';
