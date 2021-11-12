@@ -1,13 +1,14 @@
 {
   "name": "hapu-nanny-share",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hapu - Become a Nanny Share Host",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --config webpack.config.js",
+    "start": "webpack-dev-server --mode development",
     "lint": "npx eslint --fix --ext .js,.jsx src/",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|html)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|html)\"",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "html",
@@ -22,6 +23,7 @@
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.0",
     "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "babel-preset-react": "^6.24.1",

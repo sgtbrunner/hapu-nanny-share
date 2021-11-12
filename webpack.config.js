@@ -1,24 +1,27 @@
+const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
-  template: './public/index.html',
-  filename: './index.html',
-  favicon: './public/favicon.ico',
+  template: path.resolve('./public/index.html'),
+  favicon: path.resolve('./public/favicon.ico'),
 });
 
+// eslint-disable-next-line no-undef
 module.exports = {
-  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/',
+    filename: 'bundle.js',
+  },
+  devServer: {
+    static: './public',
+    port: 8080,
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
