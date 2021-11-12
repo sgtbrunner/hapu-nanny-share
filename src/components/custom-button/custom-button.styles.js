@@ -11,5 +11,6 @@ export const CustomButtonComponent = styled.button`
   padding: 12px 22px;
   border-radius: 4px;
   border-style: hidden;
+  min-width: 94px;
   ${getButtonStyles}
 `;

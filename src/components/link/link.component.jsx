@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { PRIMARY, SECONDARY, GREY, WHITE } from '../../utils/constants.utils';
+import {
+  PRIMARY,
+  SECONDARY,
+  GREY,
+  WHITE,
+  LINK,
+} from '../../utils/constants.utils';
 import { LinkComponent } from './link.styles';
 
 const Link = ({ children, textColor, to, decoration }) => (
@@ -9,7 +15,7 @@ const Link = ({ children, textColor, to, decoration }) => (
     textColor={textColor}
     decoration={decoration}
     href={to}
-    role="link"
+    role={LINK}
   >
     {children}
   </LinkComponent>

@@ -3,7 +3,7 @@ import React from 'react';
 import Lead from '../../lead/lead.component';
 import Link from '../../link/link.component';
 import Divider from '../../divider/divider.component';
-import CustomButton from '../../custom-button/custom-button.component';
+import NewsletterForm from '../../newsletter-form/newsletter-form.component';
 import { ImageSection, FormSection } from './main.styles';
 import ImageSection1 from '../../../assets/images/image-section-1.svg';
 import ImageSection3 from '../../../assets/images/image-section-3.svg';
@@ -49,11 +49,7 @@ const mainSections = [
           Leave us your name and email and we’ll update you as soon as a share
           becomes available in your area!
         </p>
-        <form>
-          <input type="text" placeholder="Your name" />
-          <input type="text" placeholder="Your email" />
-          <CustomButton type="submit">Send</CustomButton>
-        </form>
+        <NewsletterForm></NewsletterForm>
       </FormSection>
     ),
   },
