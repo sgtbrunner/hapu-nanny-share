@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Lead from '../../lead/lead.component';
+import Link from '../../link/link.component';
 import Divider from '../../divider/divider.component';
 import CustomButton from '../../custom-button/custom-button.component';
 import { ImageSection, FormSection } from './main.styles';
@@ -29,13 +30,13 @@ const mainSections = [
             You have a fantastic home, a fantastic nanny and wouldn’t cutting
             your costs in half be, well, fantastic?! If only it was easy to
             connect with other parents to share your costs? Well now it is, with
-            Hapu. <a style={{ padding: 0 }}>Hapu means tribe</a> and it’s our
+            Hapu. <Link decoration>Hapu means tribe</Link> and it’s our
             foundational 3 tribal principles that empowers you to create and
             manage your own tribe. A tribe that together has the power to create
             new affordable solutions in childcare that work for you and your
             community.
           </p>
-          <a>Ready to get started?</a>
+          <Link decoration>Ready to get started?</Link>
         </div>
       </ImageSection>
     ),
@@ -73,7 +74,9 @@ const mainSections = [
             automated payment system takes care of the rest. You need never talk
             money or who owes what.
           </p>
-          <a>Read how Bridget’s share (without Hapu) ended over $15</a>
+          <Link decoration>
+            Read how Bridget’s share (without Hapu) ended over $15
+          </Link>
         </div>
       </ImageSection>
     ),
@@ -88,7 +91,9 @@ const mainSections = [
           we’ve defined Hapu around our three tribal principles; clearly defined
           process, transparency over money and equality of participation.
         </p>
-        <a>Read how Hapu’s tribal background defines our app</a>
+        <Link decoration>
+          Read how Hapu’s tribal background defines our app
+        </Link>
         <HiddenOnSmallScreens>
           <img src={ImageSection4} alt="ImageSection4" />
         </HiddenOnSmallScreens>

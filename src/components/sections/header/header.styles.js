@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SMALL_SCREEN_BREAKPOINT } from '../../../global.styles';
 
 import MobileBgHeader from '../../../assets/images/header-bg-mobile.svg';
 import DesktopBgHeager from '../../../assets/images/header-bg.svg';
@@ -10,7 +11,7 @@ export const HeaderContainer = styled.header`
   background-size: cover;
   height: 640px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     background-image: url(${DesktopBgHeager}),
       linear-gradient(314.72deg, #c86dd7 -1.5%, #7e49c3 39.43%, #5912ac 86.02%);
     height: 616px;
@@ -23,7 +24,7 @@ export const HeroContainer = styled.div`
   justify-content: space-between;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     padding: 100px 10% 0 10%;
     text-align: left;
   }
@@ -51,7 +52,7 @@ export const HeroTitle = styled.div`
     margin: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     padding-top: 30px;
     padding-right: 40px;
 

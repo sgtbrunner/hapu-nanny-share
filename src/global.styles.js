@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+export const SMALL_SCREEN_BREAKPOINT = 768;
+
 const GlobalStyle = createGlobalStyle`
     :root {
         // COLORS
@@ -14,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
         // FONT
         --default-font-family: 'Inter';
+        --xs-font-size: 12px;
         --sm-font-size: 14px;
         --md-font-size: 16px;
         --lg-font-size: 18px;
@@ -24,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
         --normal-font-weight: 500;
 
         //LINE HEIGHT
+        --xs-line-height: 16px;
         --sm-line-height: 20px;
         --md-line-height: 24px;
         --lg-line-height: 28px;
@@ -67,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
 export const HiddenOnSmallScreens = styled.div`
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     display: initial;
   }
 `;

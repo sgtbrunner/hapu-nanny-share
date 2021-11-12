@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SMALL_SCREEN_BREAKPOINT } from '../../../global.styles';
 
 export const FooterContainer = styled.footer`
   display: flex;
@@ -8,11 +9,17 @@ export const FooterContainer = styled.footer`
   background-color: var(--white-color);
 
   h3 {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 32px;
+    font-size: var(--xl-font-size);
+    font-weight: var(--normal-font-weight);
+    line-height: var(--xl-line-height);
     color: var(--dark-grey-color);
     margin: 0;
+  }
+
+  > a {
+    font-size: var(--md-font-size);
+    font-weight: var(--normal-font-weight);
+    line-height: var(--md-line-height);
   }
 
   button {
@@ -24,28 +31,28 @@ export const FooterContainer = styled.footer`
 
     div {
       text-align: left;
-      font-weight: 400;
+      font-weight: var(--light-font-weight);
     }
 
     div :nth-child(1) {
       margin: 0;
-      font-size: 16px;
-      line-height: 28px;
+      font-size: var(--md-font-size);
+      line-height: var(--lg-line-height);
     }
 
     div :nth-child(2) {
       margin: 0;
-      font-size: 12px;
-      line-height: 16px;
+      font-size: var(--xs-font-size);
+      line-height: var(--xs-line-height);
     }
   }
 `;
 
 export const FooterSubTitle = styled.p`
   margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: var(--md-font-size);
+  font-weight: var(--light-font-weight);
+  line-height: var(--lg-line-height);
   padding-bottom: 24px;
 `;
 
@@ -56,7 +63,7 @@ export const FooterLinkBar = styled.div`
   padding-top: 54px;
   margin: 0 20%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -76,12 +83,12 @@ export const TextLinksContainer = styled.ul`
 
   a {
     white-space: nowrap;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: var(--sm-font-size);
+    font-weight: var(--normal-font-weight);
     line-height: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     margin: 0;
     margin-left: 120px;
   }
@@ -106,14 +113,14 @@ export const IconLinksContainer = styled.ul`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     padding-bottom: 0;
   }
 `;
 
 export const CopyrightText = styled.p`
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  color: #3d3d3d;
+  font-size: var(--xs-font-size);
+  font-weight: var(--light-font-weight);
+  line-height: var(--xs-line-height);
+  color: var(--dark-grey-color);
 `;

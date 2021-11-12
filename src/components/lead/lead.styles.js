@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SMALL_SCREEN_BREAKPOINT } from '../../global.styles';
 
 export const LeadContainer = styled.section`
   background-color: var(--white-color);
@@ -16,7 +17,18 @@ export const LeadContent = styled.div`
   padding-top: 32px;
   padding-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
+  a {
+    font-weight: var(--normal-font-weight);
+    padding: 0 64px 12px 64px;
+    font-size: var(--md-font-size);
+    line-height: var(--md-line-height);
+
+    @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
+      padding: 0 2px 0 0;
+    }
+  }
+
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -29,21 +41,10 @@ export const LeadIcon = styled.img`
   padding-bottom: 16px;
   width: var(--icon-length);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     padding-right: 32px;
     padding-bottom: 0;
     width: auto;
-  }
-`;
-
-export const LeadLink = styled.a`
-  font-weight: var(--normal-font-weight);
-  padding: 0 64px 12px 64px;
-  font-size: var(--md-font-size);
-  line-height: var(--md-line-height);
-
-  @media screen and (min-width: 768px) {
-    padding: 0 2px 0 0;
   }
 `;
 
@@ -53,7 +54,7 @@ export const LeadText = styled.h5`
   font-size: var(--sm-font-size);
   line-height: var(--sm-line-height);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     font-size: var(--md-font-size);
     line-height: var(--md-line-height);
   }

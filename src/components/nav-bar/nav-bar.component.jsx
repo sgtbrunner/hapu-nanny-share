@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from '../../assets/icons/badge.svg';
+import { Badge } from '../../assets/icons';
 
 import { WHITE } from '../../utils/constants.utils';
 import { HiddenOnSmallScreens } from '../../global.styles';

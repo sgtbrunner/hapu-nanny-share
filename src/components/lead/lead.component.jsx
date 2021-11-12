@@ -1,19 +1,14 @@
 import React from 'react';
 
-import {
-  LeadContainer,
-  LeadContent,
-  LeadIcon,
-  LeadLink,
-  LeadText,
-} from './lead.styles';
-import ProfileIcon from '../../assets/images/profile-icon.svg';
+import Link from '../link/link.component';
+import { LeadContainer, LeadContent, LeadIcon, LeadText } from './lead.styles';
+import { ProfileIcon } from '../../assets/icons';
 
 const Lead = () => (
   <LeadContainer>
     <LeadContent>
       <LeadIcon src={ProfileIcon} alt="profile-icon"></LeadIcon>
-      <LeadLink>Sarah’s day care available now in North Sydney</LeadLink>
+      <Link decoration>Sarah’s day care available now in North Sydney</Link>
       <LeadText>Wednesday, Thursday, Friday - 7:30 - 5:30</LeadText>
     </LeadContent>
   </LeadContainer>

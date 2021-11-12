@@ -44,7 +44,7 @@ const Footer = () => (
         <p>Takes less than 5 minutes</p>
       </div>
     </CustomButton>
-    <a>Or browse local nanny-shares</a>
+    <Link decoration>Or browse local nanny-shares</Link>
     <FooterLinkBar>
       <img src={HapuLogo} alt="hapu-logo" />
       <TextLinksContainer>

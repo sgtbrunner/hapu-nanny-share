@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { SMALL_SCREEN_BREAKPOINT } from '../../../global.styles';
 
 const isColumnDirection = (direction) => direction === 'column';
 const isReverseOrientation = (orientation) => orientation === 'reverse';
@@ -53,7 +54,7 @@ export const ImageSection = styled(Section)`
   }
 
   a {
-    padding: 0 5%;
+    font-size: var(--md-font-size);
   }
 
   @media screen and (min-width: 1100px) {
@@ -82,6 +83,7 @@ export const ImageSection = styled(Section)`
 
     a {
       padding: 0 0 64px 0;
+      font-size: var(--md-font-size);
     }
   }
 `;
@@ -124,7 +126,7 @@ export const FormSection = styled(Section)`
     vertical-align: center
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${SMALL_SCREEN_BREAKPOINT}px) {
     p {
       font-size: var(--lg-font-size);
       line-height: var(--md-line-height);

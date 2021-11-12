@@ -17,7 +17,7 @@ import {
 } from './header.styles';
 import { HiddenOnSmallScreens } from '../../../global.styles';
 import Link from '../../link/link.component';
-import PlayButton from '../../../assets/icons/play-button.svg';
+import { PlayButton } from '../../../assets/icons';
 import HeroImage from '../../../assets/images/hero-image.svg';
 
 const testName = 'hero section A/B test';
